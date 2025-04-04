@@ -1,0 +1,220 @@
+
+:root {
+  --primary-color: #0071bc;
+  --secondary-color: #205493;
+  --text-color: #212121;
+  --background-color: #ffffff;
+  --border-color: #d6d7d9;
+  --error-color: #e31c3d;
+  --success-color: #2e8540;
+}
+
+.complaint-form-container {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-color);
+  background-color: white;
+}
+
+.support-dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+.icon-register::before {
+  content: "👤";
+  font-size: 1.2rem;
+}
+
+.icon-login::before {
+  content: "→";
+  font-size: 1.2rem;
+}
+
+.form-number {
+  text-align: right;
+  padding: 0.5rem 4rem;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 2em;
+}
+/* Main Content */
+.form-content {
+  padding: 3rem 2rem;
+  background-color: var(--background-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.complaint-type-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.complaint-type-section h1 {
+
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  padding-bottom: 0.5rem;
+}
+
+.complaint-type-section h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Complaint Options */
+.complaint-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.complaint-option {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  align-items: flex-start;
+}
+
+.complaint-option:hover {
+  background-color: #f8f9fa;
+}
+
+.complaint-option input[type="radio"] {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-content label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.option-content p {
+  margin: 0;
+  line-height: 1.4;
+  color: #5c5c5c;
+  font-size: 0.9rem;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 120px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+ 
+  .header-images {
+    padding: 1rem 2rem;
+  }
+
+  .form-header {
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .cms-logo {
+    height: 30px;
+  }
+
+  .compliance-image {
+    height: 40px;
+  }
+ 
+  .btn-primary, .btn-secondary {
+    width: 100%;
+    text-align: center;
+  } 
+  .header-images {
+    padding: 1rem;
+  }
+
+  .form-header {
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+
+  .form-content {
+    padding: 1rem;
+  }
+
+  .complaint-type-section {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .complaint-options {
+    flex-wrap: wrap;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .complaint-option {
+    padding: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .option-content label {
+    font-size: 0.9rem;
+  }
+
+  .option-content p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .header-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .complaint-option {
+    flex-direction: column;
+    text-align: center;
+  }
+} 
