@@ -21,6 +21,21 @@ A modern, responsive web application built with React and Vite for submitting an
   - Footer with essential links
   - Complainant Details form with organized sections
 
+## Screenshots
+
+### Complaint Type Selection
+<img width="1425" alt="Screenshot 2025-04-04 at 5 27 38 PM" src="https://github.com/user-attachments/assets/d0180d41-0920-4f63-9785-55dd6abd2946" />
+<img width="1429" alt="Screenshot 2025-04-04 at 5 27 59 PM" src="https://github.com/user-attachments/assets/ea094a43-aeb8-4b1f-a8dd-4a768b000901" />
+*
+<img width="1436" alt="Screenshot 2025-04-04 at 5 28 22 PM" src="https://github.com/user-attachments/assets/476dbb96-44c7-4b76-8207-35fd6cde9181" />
+*Screenshot showing the complaint type selection interface with validation.*
+
+### Complainant Details Form
+<img width="1430" alt="Screenshot 2025-04-04 at 5 28 34 PM" src="https://github.com/user-attachments/assets/ad7ed7de-b45c-4e8d-aa05-d3ab4b6a556b" />
+<img width="1435" alt="Screenshot 2025-04-04 at 5 37 16 PM" src="https://github.com/user-attachments/assets/d63da09f-c7f8-4552-8281-ea5a7eb47efc" />
+
+*Screenshot showing the complainant information form.*
+
 ## Technology Stack
 
 - **Frontend Framework:** React
