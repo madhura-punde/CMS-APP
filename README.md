@@ -60,7 +60,7 @@ git clone [repository-url]
 
 2. Navigate to the project directory:
 ```bash
-cd assessment-radiantt
+cd assessment-cms
 ```
 
 3. Install dependencies:
