@@ -7,7 +7,7 @@ import './ComplaintForm.css';
 const ComplaintForm = () => {
   const navigate = useNavigate();
   const [selectedComplaintType, setSelectedComplaintType] = useState('');
-
+  const [showError, setShowError] = useState(false);
 
   const complaintTypes = [
     {
@@ -34,9 +34,10 @@ const ComplaintForm = () => {
 
   const handleComplainantInfo = () => {
     if (selectedComplaintType) {
+      setShowError(false);
       navigate('/complainant-details');
     } else {
-      alert('Please select a complaint type before proceeding.');
+      setShowError(true);
     }
   };
 
@@ -49,6 +50,16 @@ const ComplaintForm = () => {
         <section className="complaint-type-section">
           <h1>Complaint Type</h1>
           <h1>Make a selection below</h1>
+
+          {showError && (
+            <div className="error-block">
+              <div className="error-title">
+              <span className="error-icon">! </span>
+              <span className="error-text">Error</span>
+              </div>
+              <p className="error-message">Select a Complaint Type.</p>
+            </div>
+          )}
 
           <form className="complaint-options">
             {complaintTypes.map((type) => (
